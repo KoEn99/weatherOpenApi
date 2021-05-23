@@ -9,7 +9,7 @@ class MainScreenPresenter @Inject constructor(var weatherService: WeatherService
     MainScreenContract.Presenter {
     override fun generateText(str: String) {
         weatherService.attachPresenter(this)
-        weatherService.getWeather("tomsk")
+        weatherService.getWeather("Томск")
     }
 
     override fun showToast(str: String) {
